@@ -1,0 +1,41 @@
+// Смотри какой font-weight и font-style нужен
+
+@mixin font($size, $height: $size, $weight: 700, $style: normal) {
+  font-size: $size + rem;
+  line-height: $height + rem;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin flex($grow: 0, $shrink: 1, $basis: auto) {
+  flex: $grow $shrink $basis;
+}
+
+@mixin media-laptop {
+  @media (max-width: $content-width) {
+    @content;
+  }
+}
+@mixin media-desktop {
+  @media (max-width: $add-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-big-width) {
+    @content;
+  }
+}
+
+@mixin media-mobilesmall {
+  @media (max-width: $mobile-small-width) {
+    @content;
+  }
+}

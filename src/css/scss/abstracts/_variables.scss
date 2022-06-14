@@ -1,0 +1,46 @@
+// font: text-font, code-font(monospace)
+
+  // $main-font: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  // $extra-font: 'Merriweather', 'Georgia', serif;
+
+
+// color: main-color, extra-color, text-color
+
+  $color-primary: #96bb7c;
+  $color-additional: #f3cd03;
+  
+  $color-bg-light-gray: #fafafa;
+  $color-bg-light: #ffffff;
+  $color-bg-dark: #2d4059;
+  $color-bg-secondary: #fff2f3;
+
+  $color-danger: #e74040;
+  $color-muted: #bdbdbd;
+  $color-bright: #ffab71;
+
+  $color-text-primary: #96bb7c;;
+  $color-text-second: #737373;
+  $color-text-add: #252b42;
+  $color-text-light: #ffffff;
+
+  // $color-border: #c4c4c4;
+  // $color-hovered: #BCD0E5;
+  // $color-heading: #2F281E;
+  // $color-link: #1943EF;
+  // $color-tag: #F5F5F5;
+  // $color-background: #FFEEE1;
+  // $color-bg: #e5f3f3;
+  // $text-color: rgb(34, 34, 34);
+  // $brand-color: rgb(229, 0, 80);
+  // $light-grey: rgb(237, 237, 237);
+  // $medium-grey: rgb(153, 153, 153);
+  // $dark-grey: rgb(68, 68, 68);
+
+
+// Container's maximum width and breakpoints
+
+  $content-width: 1050px;
+  $desktop-width: 992px;
+  $tablet-width: 768px;
+  $mobile-big-width: 414px;
+  $mobile-small-width: 320px;

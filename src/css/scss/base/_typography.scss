@@ -1,0 +1,37 @@
+// @font-face,
+// font, letter-spacing, line-height, white-space, word-spacing,
+// text-align, text-decoration, word-break, word-wrap
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/montserrat-v24-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v24-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/montserrat-v24-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v24-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  font-family: 'Montserrat', 'Tenor Sans', sans-serif;
+  // font-family: $main-font;
+  // По умолчанию font-size идёт 16px. Если нужен 14px, то лучше указывать в em. fs: 0.875em; (14/16=0.875)
+  // font-size: calc(0.5em + 1vw); or 0.6em
+  // В normalize: line-height: 1.15; + margin: 0;
+  // line-height: 1.4; 1.4 - 1.6
+  // letter-spacing: 0.02em; 0.01em-0.03em
+  // word-spacing - Устанавливает интервал между словами
+  // white-space - Устанавливает, как отображать пробелы между словами.
+
+  // color: $text-color;
+}

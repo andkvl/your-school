@@ -378,11 +378,17 @@ p {
   display: flex;
 }
 
+.layout-4-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff2f3;
+  background-color: #fafafa;
 }
 
 .header__container {
@@ -455,13 +461,25 @@ p {
 }
 
 .join-us {
-  background: #fff2f3;
+  background-color: #fafafa;
   padding-bottom: 80px;
 }
 
 .join-us__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.join-us__top > img {
+  margin-right: -85px;
+}
+
+.join-us__body {
   padding-top: 94px;
-  padding-bottom: 80px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
 }
 
 .join-us__subtitle {
@@ -502,10 +520,16 @@ p {
   margin-right: 10px;
 }
 
+.join-us__buttons > .button {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .join-us__bottom {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: -101px;
 }
 
 .services__column {
@@ -574,6 +598,41 @@ p {
   width: 32px;
   height: 32px;
   background-image: url(../../src/images/icons/book.svg);
+}
+
+.prospect__success {
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 77px 0px;
+}
+
+.success__column:not(:last-child) {
+  margin-right: 30px;
+}
+
+.success__amount {
+  font-size: 5.8rem;
+  line-height: 8rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  color: #96bb7c;
+}
+
+.success__text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #252b42;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .button {

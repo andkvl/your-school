@@ -1,12 +1,20 @@
 .join-us {
-    background: $color-bg-secondary;
+    background-color: $color-bg-light-gray;
     padding-bottom: 80px;
 }
 .join-us__container {
+    // background-color: $color-bg-light-gray;
 }
 .join-us__top {
+    display: flex;
+
+    > img {
+        margin-right: -85px;
+    }
+}
+.join-us__body {
     padding-top: 94px;
-    padding-bottom: 80px;
+    @include flex (0, 1, 50%);
 }
 .join-us__subtitle {
     @include font (1.6, 2.4);
@@ -31,9 +39,14 @@
     > *:not(:last-child) {
         margin-right: 10px;
     }
+    > .button {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 .join-us__bottom {
     justify-content: space-between;
+    margin-top: -101px;
 }
 
 .services {

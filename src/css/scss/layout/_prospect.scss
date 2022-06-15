@@ -29,22 +29,71 @@
 }
 .description {
     display: flex;
+    justify-content: space-between;
+    padding-top: 224px;
+    padding-bottom: 225px;
 }
 .description__content {
+    @include flex (0, 1, 49%);
+    & > *:not(:last-child) {
+        margin-bottom: 35px;
+    }
 }
 .description__line {
+    width: 94px;
+    height: 7px;
+    background-color: $color-danger;
 }
 .description__title {
 }
 .description__text {
+    max-width: 360px;
 }
 .description__link {
+    @include font (1.4, 2.4);
+    letter-spacing: 0.2px;
+    color: $color-text-primary;
+    &:hover {
+        // color: $color-bg-dark;
+        text-decoration: underline;
+    }
 }
 .link-btn {
+    display: inline-flex;
+    align-items: center;
 }
 .link-btn__text {
 }
 .link__btn__ico {
+    color: $color-text-primary;
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    width: 9px;
+    > span {
+        margin-left: 10px;
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        background-color: $color-text-primary;
+        height: 1px;
+        width: 10px;
+        transform: rotate(45deg);
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 4.5px;
+            left: 5px;
+            background-color: $color-text-primary;
+            height: 1px;
+            width: 10px;
+            transform: rotate(275deg);
+        }
+    }
 }
 .desription__img {
+    @include flex (0, 1, 49%);
+    margin-top: -90px;
 }

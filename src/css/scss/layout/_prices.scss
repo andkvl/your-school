@@ -1,0 +1,123 @@
+.prices {
+  background-color: $color-bg-secondary;
+}
+.prices__container {
+  padding-top: 162px;
+  > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.prices__subtitle {
+}
+.subtitle_colored {
+}
+.prices__title {
+}
+.prices__text {
+  // max-width: 465px;
+}
+.prices__body {
+}
+.price-item {
+  //   margin: 0 -5px;
+  justify-content: space-between;
+  margin-top: 79px;
+}
+.price-item__column {
+  //   @include flex(0, 1, 33%);
+  //   display: flex;
+  //   flex-direction: column;
+  //   position: relative;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   flex: 1 1 33.3333%;
+  //   padding: 0 5px;
+  flex: 0 1 343px;
+}
+.price-item__top {
+  position: relative;
+  padding-bottom: 87.5%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.price-item__labels {
+  position: absolute;
+  top: 20px;
+  right: 80%;
+  z-index: 2;
+}
+.price-item__label {
+  @include font(1.4, 2.4);
+  color: $color-text-light;
+  letter-spacing: 0.2px;
+  padding: 0px 10px;
+  &_sale {
+    background-color: $color-danger;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+}
+.price-item__actions {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  bottom: 25px;
+  > *:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.price-item__action {
+  background-color: $color-bg-light;
+  width: 40px;
+  height: 40px;
+  border-radius: 44.7857px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+//   @extend %transition;
+  &:hover {
+    // cursor: pointer;
+  }
+  &_like {
+    // background-image: url('../../src/images/icons/like.svg');
+    // background-repeat: no-repeat;
+  }
+  &_add {
+  }
+  &_details {
+  }
+}
+
+.price-item__image {
+  // @include flex (1, 1, 100%);
+  // overflow: hidden;
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.price-item__body {
+  // @include flex (1, 1, auto);
+}
+.price-item__heading {
+}
+.price-item__courses {
+}
+.price-item__description {
+}
+.price-item__sales {
+}
+.price-item__cost {
+}
+.price-item__btn {
+}
+.button {
+}
+.button_bordered {
+}

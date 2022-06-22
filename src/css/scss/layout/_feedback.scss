@@ -1,0 +1,64 @@
+.feedback {
+}
+.feedback__container {
+    padding: 160px 0px;
+    > *:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+.feedback__subtitle {
+}
+.subtitle_colored {
+}
+.feedback__title {
+}
+.feedback__text {
+    @include font (1.4, 2.0, 400);
+    letter-spacing: 0.2px;
+}
+.layout-3-column {
+}
+.feedback__body {
+    margin-top: 70px;
+}
+.feedback-item {
+}
+.feedback-item__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback-item__stars {
+    display: flex;
+}
+.feedback-item__star {
+    width: 22px;
+    height: 22px;
+    &_colored {
+        background: url(../../src/images/icons/star-colored.svg);
+    }
+    &_uncolored {
+        background: url(../../src/images/icons/star-uncolored.svg);
+    }
+}
+.feedback-item__comment {
+    @include font (1.4, 2.0, 400);
+    letter-spacing: 0.2px;
+    margin: 15px 0px 30px;
+    // margin: 15px 95px 30px;
+}
+.feedback-item__person {
+    display: flex;
+}
+.feedback-item__photo {
+}
+.feedback-item__content {
+}
+.feedback-item__name {
+}
+.feedback-item__post {
+    @include font (1.2, 1.6, 400);
+    letter-spacing: 0.2px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: $color-text-add;
+}

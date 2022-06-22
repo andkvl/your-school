@@ -1,0 +1,19 @@
+.social {
+    display: flex;
+    justify-content: center;
+    > *:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+.social__item {
+    @extend %transition;
+    :hover {
+        transform: scale(1.2);
+    }
+}
+.item-facebook {
+}
+.item-instagram {
+}
+.item-twitter {
+}

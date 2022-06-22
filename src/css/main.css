@@ -1,5 +1,5 @@
 @charset "UTF-8";
-a, .button {
+a, .button, .social__item {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -1107,6 +1107,56 @@ p {
   letter-spacing: 0.2px;
 }
 
+.subscribe__container {
+  padding: 160px 0px;
+  text-align: center;
+}
+
+.subscribe__container > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.subscribe__text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2px;
+}
+
+.subscribe__form {
+  margin-top: 70px;
+}
+
+.form {
+  max-width: 688px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form > input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 83%;
+          flex: 0 1 83%;
+  padding: 15px 20px;
+  color: #737373;
+  background-color: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.form > button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 17%;
+          flex: 0 1 17%;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 5px 5px 0px;
+}
+
 .button {
   font-size: 1.4rem;
   line-height: 2.2rem;
@@ -1139,5 +1189,23 @@ p {
 .button_colored:hover {
   color: #96bb7c;
   background-color: #737373;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social__item :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=main.css.map */

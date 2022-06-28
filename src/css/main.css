@@ -977,6 +977,9 @@ p {
 
 .feedback__body {
   margin-top: 70px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .feedback-item__column {
@@ -990,12 +993,19 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 170px;
+          flex: 0 1 170px;
 }
 
 .feedback-item__stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.feedback-item__stars > *:not(:last-child) {
+  margin-right: 5px;
 }
 
 .feedback-item__star {
@@ -1018,12 +1028,19 @@ p {
   font-style: normal;
   letter-spacing: 0.2px;
   margin: 15px 0px 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .feedback-item__person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.feedback-item__photo {
+  margin-right: 15px;
 }
 
 .feedback-item__post {

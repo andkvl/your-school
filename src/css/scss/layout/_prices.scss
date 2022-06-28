@@ -7,6 +7,10 @@
   > *:not(:last-child) {
     margin-bottom: 10px;
   }
+  @include media-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .prices__subtitle {
 }
@@ -23,6 +27,9 @@
   //   margin: 0 -5px;
   justify-content: space-between;
   margin-top: 79px;
+  @include media-desktop {
+    margin-top: 25px;
+  }
 }
 .price-item__column {
   //   @include flex(0, 1, 33%);

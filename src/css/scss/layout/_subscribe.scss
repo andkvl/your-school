@@ -1,10 +1,15 @@
 .subscribe {
 }
 .subscribe__container {
-    padding: 160px 0px;
+    padding-top: 160px;
+    padding-bottom: 160px;
     text-align: center;
     > *:not(:last-child) {
         margin-bottom: 10px;
+    }
+    @include media-desktop {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 

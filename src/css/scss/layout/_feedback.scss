@@ -1,7 +1,8 @@
 .feedback {
 }
 .feedback__container {
-    padding: 160px 0px;
+    padding-top: 160px;
+    padding-bottom: 160px;
     > *:not(:last-child) {
         margin-bottom: 10px;
     }

@@ -1,7 +1,8 @@
 .team {
 }
 .team__container {
-    padding: 112px 0px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     > *:not(:last-child) {
         margin-bottom: 10px;
     }

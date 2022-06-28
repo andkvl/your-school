@@ -294,6 +294,13 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  ._container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .visuallyhidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -399,7 +406,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   min-height: 90px;
-  padding: 10px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__logo {
@@ -960,7 +968,8 @@ p {
 }
 
 .feedback__container {
-  padding: 160px 0px;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .feedback__container > *:not(:last-child) {
@@ -1054,7 +1063,8 @@ p {
 }
 
 .team__container {
-  padding: 112px 0px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 
 .team__container > *:not(:last-child) {

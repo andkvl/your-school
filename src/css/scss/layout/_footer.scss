@@ -11,6 +11,9 @@
     color: $color-text-second;
     @include font (1.4, 2.4);
     letter-spacing: 0.2px;
+    @include media-tablet {
+      @include font (1.1, 1.8);
+    }
   }
   @include media-desktop {
     padding: 25px 0px;
@@ -29,6 +32,9 @@
   @include font(1.6, 2.4);
   letter-spacing: 0.1px;
   margin-bottom: 20px;
+  @include media-tablet {
+    @include font (1.2, 1.8);
+  }
 }
 .nav-footer__menu {
 }
@@ -77,6 +83,9 @@
   color: $color-text-second;
   @include font(1.4, 2.4);
   letter-spacing: 0.2px;
+  @include media-tablet {
+    @include font (1.1, 1.8);
+  }
 }
 .footer__social {
 }

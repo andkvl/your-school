@@ -29,6 +29,9 @@
     }
 }
 .team-item {
+    @include media-tablet {
+        // flex-wrap: wrap;
+    }
 }
 .team-item__column {
     display: flex;
@@ -40,6 +43,9 @@
     overflow: hidden;
     @include media-desktop {
         @include flex (0, 1, 24%);
+    }
+    @include media-tablet {
+        // @include flex (0, 1, 48%);
     }
 }
 .team-item__image {

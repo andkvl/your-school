@@ -10,6 +10,10 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    @include media-tablet {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 .feedback__subtitle {
 }
@@ -34,6 +38,9 @@
     flex-direction: column;
     align-items: center;
     @include flex (0, 1, 170px);
+    @include media-tablet {
+        @include flex (0, 1, 32%);
+    }
 }
 .feedback-item__stars {
     display: flex;

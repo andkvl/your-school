@@ -25,11 +25,18 @@
         display: flex;
         align-items: center;
     }
+    @include media-mobile {
+        @include flex (1, 1, 100%);
+        justify-content: space-between;
+    }
 }
 .menu__hamburger {
     margin-right: 15px;
 }
 .header__title {
+    @media (max-width: 450px) {
+        @include font (1.8, 2.4);
+    }
 }
 .header__navigation {
     @include flex (1);
@@ -68,5 +75,8 @@
     }
     & .button_colored {
         text-transform: uppercase;
+    }
+    @include media-mobile {
+        display: none;
     }
 }

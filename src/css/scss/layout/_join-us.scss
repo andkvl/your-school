@@ -44,6 +44,10 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    @include media-mobile {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 .join-us__subtitle {
     @include font (1.6, 2.4);
@@ -84,10 +88,21 @@
     display: inline-flex;
     > *:not(:last-child) {
         margin-right: 10px;
+        @include media-mobile {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
     }
     > .button {
         padding-left: 40px;
         padding-right: 40px;
+        @include media-mobile {
+            @include flex (0, 1, 100%);
+        }
+    }
+    @include media-mobile {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 .join-us__bottom {

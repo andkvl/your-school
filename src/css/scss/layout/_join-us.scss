@@ -67,11 +67,18 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    @media (max-width: 625px) {
+        @include font (2.9, 4.0);
+    }
 }
 .join-us__text {
     @include font (2, 3, 400);
     letter-spacing: 0.2px;
     margin-bottom: 35px;
+    @media (max-width: 625px) {
+        margin-bottom: 15px;
+        @include font (1.8, 2.4, 400);
+    }
 }
 .join-us__buttons {
     display: inline-flex;

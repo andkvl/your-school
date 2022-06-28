@@ -34,6 +34,11 @@
   @include media-desktop {
     margin-top: 25px;
   }
+  @media (max-width: 700px) {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .price-item__column {
   //   @include flex(0, 1, 33%);
@@ -49,6 +54,10 @@
   flex-direction: column;
   @media (max-width: 1100px) {
     @include flex (0, 1, 32%);
+  }
+  @media (max-width: 700px) {
+    flex: 0 1 343px;
+    margin: 15px 0px;
   }
 }
 .price-item__top {

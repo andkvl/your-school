@@ -29,6 +29,9 @@
 }
 .subscribe__form {
     margin-top: 70px;
+    @media (max-width: 700px) {
+        margin-top: 25px;
+    }
 }
 .form {
     max-width: 688px;
@@ -43,12 +46,20 @@
         border: 1px solid $color-border;
         border-right: none;
         border-radius: 5px 0px 0px 5px;
-
+        @media (max-width: 700px) {
+            @include flex (0, 1, 75%);
+        }
     }
     > button {
         @include flex (0, 1, 17%);
         border: 1px solid $color-border;
         border-radius: 0px 5px 5px 0px;
+        @media (max-width: 700px) {
+            @include flex (0, 1, 25%);
+        }
+    }
+    @media (max-width: 700px) {
+        max-width: 90%;
     }
 }
 .button {

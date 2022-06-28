@@ -11,6 +11,9 @@
     min-height: 90px;
     padding-top: 10px;
     padding-bottom: 10px;
+    @media (max-width: 742px) {
+        justify-content: space-between;
+    }
 }
 .header__logo {
     @include font (2.4, 3.2);
@@ -18,11 +21,21 @@
     letter-spacing: 0.1px;
     // @include flex (1);
     // margin-right: 25px;
+    @media (max-width: 742px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.menu__hamburger {
+    margin-right: 15px;
 }
 .header__title {
 }
 .header__navigation {
     @include flex (1);
+    @media (max-width: 742px) {
+        @include flex (0, 1, auto);
+    }
 }
 .nav {
     display: flex;
@@ -33,7 +46,9 @@
 }
 .nav__list {
     display: flex;
-    
+    @media (max-width: 742px) {
+        display: none;
+    }
 }
 .nav__item {
     &:not(:last-child) {

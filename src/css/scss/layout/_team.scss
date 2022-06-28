@@ -27,10 +27,14 @@
     @include media-desktop {
         margin-top: 50px;
     }
+    @media (max-width: 742px) {
+        margin-top: 0;
+    }
 }
 .team-item {
-    @include media-tablet {
-        // flex-wrap: wrap;
+    @media (max-width: 742px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 .team-item__column {
@@ -44,8 +48,9 @@
     @include media-desktop {
         @include flex (0, 1, 24%);
     }
-    @include media-tablet {
-        // @include flex (0, 1, 48%);
+    @media (max-width: 742px) {
+        @include flex (0, 1, 241px);
+        margin: 15px 0px;
     }
 }
 .team-item__image {

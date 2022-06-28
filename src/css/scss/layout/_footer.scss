@@ -18,12 +18,24 @@
   @include media-desktop {
     padding: 25px 0px;
   }
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .nav-footer__column {
     // padding-right: 30px;
     @include flex (0, 1, 16.6667%);
+    @media (max-width: 700px) {
+      @include flex (0, 1, 32%);
+      margin-bottom: 15px;
+    }
   &_data {
     @include flex (0, 1, 33.3333%);
+    @media (max-width: 700px) {
+      @include flex (0, 1, 64%);
+      margin-bottom: 15px;
+    }
   }
 }
 .nav-footer__label {

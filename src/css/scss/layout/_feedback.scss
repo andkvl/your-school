@@ -30,8 +30,14 @@
 .feedback__body {
     margin-top: 70px;
     justify-content: space-evenly;
+    @media (max-width: 700px) {
+        margin-top: 0;
+    }
 }
 .feedback-item {
+    @media (max-width: 700px) {
+        flex-wrap: wrap;
+    }
 }
 .feedback-item__column {
     display: flex;
@@ -40,6 +46,10 @@
     @include flex (0, 1, 170px);
     @include media-tablet {
         @include flex (0, 1, 32%);
+    }
+    @media (max-width: 700px) {
+        @include flex (0, 1, 90%);
+        margin: 25px 0px;
     }
 }
 .feedback-item__stars {
